@@ -80,3 +80,6 @@ $outbound = Get-NetFirewallRule -Direction Outbound | Get-NetFirewallApplication
         New-NetFirewallRule -DisplayName "Allow $([IO.Path]::GetFileNameWithoutExtension($_))" -Direction Outbound -Action Allow -Program $_
     }
 }
+
+# C:\Windows\System32\LogFiles\Firewall\pfirewall.log
+Set-NetFirewallProfile -Profile Domain,Private,Public -LogBlocked True
