@@ -1,19 +1,23 @@
 #Requires -RunAsAdministrator
 
+Set-NetFirewallProfile -Profile Domain,Private,Public -DefaultInboundAction Block
+
 # netstat -ano | findstr LISTENING
 
 @(
     "CDPSvc" # Connected Devices Platform Service
     "FDResPub" # Function Discovery Resource Publication
 
-    "LanmanServer" #  Server
+    "LanmanServer"
     "srv2"
     "srvnet"
 
     "SessionEnv" # Remote Desktop Configuration
     "Netlogon"
-    "LanmanWorkstation" # Workstation
+    "LanmanWorkstation"
     "mrxsmb20"
+
+    "Spooler"
 
     "Agent"
 ) | % {
