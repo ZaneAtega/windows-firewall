@@ -72,7 +72,7 @@ $outbound = Get-NetFirewallRule -Direction Outbound | Get-NetFirewallApplication
     "E:\Git\mingw64\libexec\git-core\git-remote-https.exe"
     "E:\nodejs\node.exe"
     "E:\xampp\apache\bin\httpd.exe"
-    "C:\Program Files (x86)\cloudflared.exe"
+    "C:\Program Files (x86)\cloudflared\cloudflared.exe"
 
     "E:\qBittorrent\qbittorrent.exe"
 
