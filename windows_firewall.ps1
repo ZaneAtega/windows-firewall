@@ -77,6 +77,7 @@ $outbound = Get-NetFirewallRule -Direction Outbound | Get-NetFirewallApplication
     "E:\qBittorrent\qbittorrent.exe"
 
     "C:\Windows\System32\MRT.exe"
+    "C:\Windows\System32\smartscreen.exe"
 
     # nvngx_update.exe NVDisplay.Container.exe REDlauncher.exe REDupdater.exe CapCut.exe VEDetector.exe Agent.exe
 ) | % {
